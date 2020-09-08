@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>java自学笔记（路线） | stevia</title>
+  <title>stevia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="优势 相关环境 很健全 还有开源项目 和很多其它的语言相比 应用比较广   基础知识 编程语言 java 找开源项目 自己动手上手（已经学过c++和python  上手相对简单）（java编程思想） 基本算法与数据结构（leetcode刷题） 基本网络知识： TCP&#x2F;IP HTTP&#x2F;HTTPS 基本的设计模式  （注意配上项目动手，基础打牢）工具方面 操作系统 Linux（Centos，Ubun">
+  <meta name="description" content="排序总结包括一些概念加深理解 一些概念准备（之前没有系统研究过） 面向对象   万物皆对象 程序时对象的集合，通过发送消息告知彼此所要做的 每个对象都有自己的有其他对象构成的存储 每个对象都有其类型 某一个特定类型的所有对象都可以接受同样的消息 状态、行为、标识   接口   就扣确定了对某一特定对象所发出的请求。eg：light it&#x3D; new Light();li.on();（这里面，on（）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java自学笔记（路线）">
-<meta property="og:url" content="http://yoursite.com/2020/09/01/learning-process/index.html">
+<meta property="og:title" content="stevia">
+<meta property="og:url" content="http://yoursite.com/2020/09/06/%E6%8E%92%E5%BA%8F%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="stevia">
-<meta property="og:description" content="优势 相关环境 很健全 还有开源项目 和很多其它的语言相比 应用比较广   基础知识 编程语言 java 找开源项目 自己动手上手（已经学过c++和python  上手相对简单）（java编程思想） 基本算法与数据结构（leetcode刷题） 基本网络知识： TCP&#x2F;IP HTTP&#x2F;HTTPS 基本的设计模式  （注意配上项目动手，基础打牢）工具方面 操作系统 Linux（Centos，Ubun">
+<meta property="og:description" content="排序总结包括一些概念加深理解 一些概念准备（之前没有系统研究过） 面向对象   万物皆对象 程序时对象的集合，通过发送消息告知彼此所要做的 每个对象都有自己的有其他对象构成的存储 每个对象都有其类型 某一个特定类型的所有对象都可以接受同样的消息 状态、行为、标识   接口   就扣确定了对某一特定对象所发出的请求。eg：light it&#x3D; new Light();li.on();（这里面，on（）">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-01T10:15:11.000Z">
-<meta property="article:modified_time" content="2020-09-01T10:18:16.092Z">
+<meta property="article:published_time" content="2020-09-06T15:11:45.155Z">
+<meta property="article:modified_time" content="2020-09-08T16:14:32.716Z">
 <meta property="article:author" content="stevia">
 <meta name="twitter:card" content="summary">
   
@@ -154,101 +154,113 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-learning-process" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-排序总结" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      java自学笔记（路线）
-    </h1>
-  
-
-        
-        <a href="/2020/09/01/learning-process/" class="archive-article-date">
-  	<time datetime="2020-09-01T10:15:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-01</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li>优势 相关环境 很健全 还有开源项目</li>
-<li>和很多其它的语言相比 应用比较广</li>
+        <h1 id="排序总结"><a href="#排序总结" class="headerlink" title="排序总结"></a>排序总结</h1><h5 id="包括一些概念加深理解"><a href="#包括一些概念加深理解" class="headerlink" title="包括一些概念加深理解"></a>包括一些概念加深理解</h5><hr>
+<h2 id="一些概念准备（之前没有系统研究过）"><a href="#一些概念准备（之前没有系统研究过）" class="headerlink" title="一些概念准备（之前没有系统研究过）"></a>一些概念准备（之前没有系统研究过）</h2><ol>
+<li>面向对象</li>
 </ol>
+<ul>
+<li>万物皆对象</li>
+<li>程序时对象的集合，通过发送消息告知彼此所要做的</li>
+<li>每个对象都有自己的有其他对象构成的存储</li>
+<li>每个对象都有其类型</li>
+<li>某一个特定类型的所有对象都可以接受同样的消息</li>
+<li>状态、行为、标识</li>
+</ul>
+<ol start="2">
+<li>接口</li>
+</ol>
+<ul>
+<li>就扣确定了对某一特定对象所发出的请求。<br>eg：light it= new Light();<br>li.on();<br>（这里面，on（）就是一种接口）</li>
+</ul>
+<ol start="3">
+<li>边界</li>
+</ol>
+<ul>
+<li>public:后面的元素任何人可用</li>
+<li>private：内部方法可以用</li>
+<li>protected：继承类可以访问protected不能访问private</li>
+</ul>
+<ol start="4">
+<li>继承</li>
+</ol>
+<ul>
+<li>基类和导出类有相同的基础接口 </li>
+<li>extends</li>
+</ul>
+<ol start="5">
+<li>容器</li>
+</ol>
+<ul>
+<li>c++  STL</li>
+<li>java  一些类库 List Map Set</li>
+<li>不同的容器提供不同的接口和外部行为</li>
+<li>不同容器对于某些操作具有不同的效率 </li>
+<li>参数化类型 在java中成为泛型 用一对尖括号表示</li>
+</ul>
+<ol start="6">
+<li>对象创建和生命周期</li>
+</ol>
+<ul>
+<li>java 采用动态内存分配方式 eg： new</li>
+</ul>
+<ol start="7">
+<li>异常处理：处理错误</li>
+</ol>
+<ul>
+<li>“抛出”、“捕获”</li>
+<li>java 内置了异常处理</li>
+</ul>
+<ol start="8">
+<li>并发编程</li>
+</ol>
+<ul>
+<li>彼此独立运行的部分称之为线程</li>
+<li>隐患 共享资源 eg：两个进程不能同时向打印机发送信息</li>
+</ul>
+<ol start="9">
+<li>java与internet</li>
+</ol>
+<ul>
+<li>客服/服务器 CGI（通用网关接口）</li>
+<li>插件 plug-in</li>
+<li>脚本语言</li>
+<li>服务端 数据库搜索请求</li>
+</ul>
+<ol start="10">
+<li>引用操纵对象</li>
+</ol>
+<ul>
+<li>String s ;String s=”asdf”  ;String s= new String(“asdf”);</li>
+<li>new 就是用来和一个新的对象关联</li>
+<li>寄存器、堆栈、堆、常量存储、非RAM存储</li>
+<li>特例 常量 boolean  char  int….</li>
+<li>数值 c/c++中数组就是内存块 比如要一开始要定义数组的大小</li>
+<li>内部有一个“垃圾回收器”，辨别不会在被引用的对象</li>
+</ul>
+<ol start="11">
+<li>创建新的数据类型：类</li>
+</ol>
+<ul>
+<li>class ATypeName; ATypeName a=new AtypeName</li>
+</ul>
+<ol start="12">
+<li>方法、参数、返回值</li>
+</ol>
+<ul>
+<li>objectName.methodName(arg1,arg2,arg3)<br>eg: int x=a.f();</li>
+<li>import import java.util.ArrayList</li>
+<li>static 引用方法有两种：1. 通过对象去定位它 2. 直接通过类名引用</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SteticTes</span></span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">int</span> i=<span class="number">47</span>;</span><br><span class="line">&#125;</span><br><span class="line">Static st1 =<span class="keyword">new</span> StaticTest(); </span><br><span class="line">st1.i;</span><br><span class="line">StaticTest.i++;</span><br></pre></td></tr></table></figure>
 <hr>
-<h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><ul>
-<li>编程语言 java 找开源项目 自己动手上手（已经学过c++和python  上手相对简单）<br>（java编程思想）</li>
-<li>基本算法与数据结构（leetcode刷题）</li>
-<li>基本网络知识： TCP/IP HTTP/HTTPS</li>
-<li>基本的设计模式</li>
-</ul>
-<h2 id="（注意配上项目动手，基础打牢）"><a href="#（注意配上项目动手，基础打牢）" class="headerlink" title="（注意配上项目动手，基础打牢）"></a>（注意配上项目动手，基础打牢）</h2><h1 id="工具方面"><a href="#工具方面" class="headerlink" title="工具方面"></a>工具方面</h1><ul>
-<li>操作系统 Linux（Centos，Ubuntu…）</li>
-<li>代码管理（git/svn）</li>
-<li>持续集成(CI/CD):jenkins</li>
-<li>java项目管理工具： Maven/ Gradle</li>
-</ul>
-<hr>
-<h1 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h1><h4 id="应用层框架"><a href="#应用层框架" class="headerlink" title="应用层框架"></a>应用层框架</h4><ul>
-<li>ssh spring + struct + hibernate~</li>
-<li>ssm: spring springmvc mybatis</li>
-<li>spring boot (很好上手，自动配置)</li>
-</ul>
-<h4 id="各种中间件"><a href="#各种中间件" class="headerlink" title="各种中间件"></a>各种中间件</h4><ul>
-<li>MQ(message queue)消息队列</li>
-<li>RPC 通信框架 gRPC thrift dubbo springcloud</li>
-<li>elasticsearch 数据库 搜索引擎</li>
-</ul>
-<hr>
-<p>(还有很多，根据项目情况选用)</p>
-<h4 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h4><ul>
-<li>SQL mysql/ postgre SQL</li>
-<li>NoSQL: Redis Memcached mongodb elasticsearch</li>
-</ul>
-<hr>
-<h1 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h1><h4 id="分布式-微服务架构"><a href="#分布式-微服务架构" class="headerlink" title="分布式 微服务架构"></a>分布式 微服务架构</h4><ul>
-<li>spring cloud</li>
-<li>dubbo </li>
-<li>RPC通信框架</li>
-</ul>
-<hr>
-<h4 id="虚拟化-容器化基础"><a href="#虚拟化-容器化基础" class="headerlink" title="虚拟化/容器化基础"></a>虚拟化/容器化基础</h4><ul>
-<li>Docker 容器化（搭建集群啥的、黑盒、简单、有点像虚拟机）</li>
-<li>k8s kubernetes</li>
-</ul>
-<hr>
-<h1 id="关注源码-性能（学有余力）"><a href="#关注源码-性能（学有余力）" class="headerlink" title="关注源码/性能（学有余力）"></a>关注源码/性能（学有余力）</h1><ul>
-<li>JDK 的源码及部分设计思想</li>
-<li>Spring源码 (ioc容器)</li>
-<li>JVM 细节和排错</li>
-<li>高并发/高可用</li>
-</ul>
-<hr>
-<h1 id="Java相关书籍"><a href="#Java相关书籍" class="headerlink" title="Java相关书籍"></a>Java相关书籍</h1><ul>
-<li><p>Java编程思想（当工具书用吧）</p>
-</li>
-<li><p>Java并发编程实战</p>
-</li>
-<li><p>深入理解Java虚拟机 （jvm 面试有人提问）</p>
-</li>
-<li><p>函数式编程思想</p>
-</li>
-<li><p>TCP/IP 详解（必须看）</p>
-</li>
-<li><p>鸟哥的linux私房菜</p>
-</li>
-<li><p>Spring MVC MyBatis开发 从入门到项目实战 （入门使用 后面可以先看看spring boot spring cloud）</p>
-</li>
-<li><p>Spring 技术内幕 （Ioc Aop 实现原理等等 能不能面向切面编程的范式 看的比较难  最好先有自己动手的经验之后 再抽空看看）</p>
-</li>
-<li><p>Elasticsearch 可以考虑看看</p>
-</li>
-<li><p>Redis 入门指南 （快餐式的。挺好入门 然后可以看官方文档）</p>
-</li>
-</ul>
+<h2 id="相关函数准备"><a href="#相关函数准备" class="headerlink" title="相关函数准备"></a>相关函数准备</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isGreater</span><span class="params">(Comparable v,Comparable w)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> v.compareTo(w)&gt;<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//  交换两个元素</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(Comparable[] a,<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">    Comparable tmp;</span><br><span class="line">    tmp=a[i];</span><br><span class="line">    a[i]=a[j];</span><br><span class="line">    a[j]=tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">(Comparable[] a)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length;i++)&#123;</span><br><span class="line">        System.out.println(a[i]+<span class="string">&quot; &quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 判断是否有序</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isSorted</span><span class="params">(Comparable[] a)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length-<span class="number">1</span>;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!isGreater(a[i+<span class="number">1</span>],a[i]))</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="主体代码"><a href="#主体代码" class="headerlink" title="主体代码"></a>主体代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.*;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SortSummury</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 选择排序</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">SelectionSort</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> N=a.length;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> min=i;  <span class="comment">// 最小位置索引</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;N;j++)</span><br><span class="line">                <span class="keyword">if</span>(isLess(a[j],a[min])) min=j;</span><br><span class="line">            swap(a,i,min);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 插入排序</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">InsertSort</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> N=a.length;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;N;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i;j &gt; <span class="number">0</span> &amp;&amp; isLess(a[j],a[j-<span class="number">1</span>]);j--)</span><br><span class="line">            &#123;</span><br><span class="line">                swap(a,j,j-<span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 希尔排序</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">HealSort</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> N=a.length;</span><br><span class="line">        <span class="keyword">int</span> h=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (h&lt;N/<span class="number">3</span>) h=<span class="number">3</span>*h+<span class="number">1</span>; <span class="comment">//1,4,13,40....</span></span><br><span class="line">        <span class="keyword">while</span>(h&gt;=<span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i=h;i&lt;N;i++)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> j=i;j&gt;=h &amp;&amp; isLess(a[j],a[j-h]); j-=h)</span><br><span class="line">                    swap(a,j,j-h);</span><br><span class="line">            &#125;</span><br><span class="line">            h=h/<span class="number">3</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//  原地归并</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span>[] aux;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">mergesort</span><span class="params">(<span class="keyword">int</span>[] a)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">//aux =new int[a.length];</span></span><br><span class="line">        mergesort(a,<span class="number">0</span>,a.length-<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> lo, <span class="keyword">int</span> mid, <span class="keyword">int</span> hi)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        aux =<span class="keyword">new</span> <span class="keyword">int</span>[a.length];</span><br><span class="line">        <span class="keyword">int</span> i=lo,j=mid+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> (hi + <span class="number">1</span> - lo &gt;= <span class="number">0</span>) System.arraycopy(a, lo, aux, lo, hi + <span class="number">1</span> - lo);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> k=lo;k&lt;=hi;k++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i&gt;mid) a[k]=aux[j++];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(j&gt;hi) a[k]=aux[i++];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(isLess(aux[j],aux[i])) a[k]=aux[j++];</span><br><span class="line">            <span class="keyword">else</span> a[k]=aux[i++];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">mergesort</span><span class="params">(<span class="keyword">int</span>[] a,<span class="keyword">int</span> lo,<span class="keyword">int</span> hi)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(hi&lt;=lo) <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">int</span> mid=lo+(hi-lo)/<span class="number">2</span>;</span><br><span class="line">        mergesort(a,lo,mid);</span><br><span class="line">        mergesort(a,mid+<span class="number">1</span>,hi);</span><br><span class="line">        merge(a,lo,mid,hi);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// quicksort</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">QuickSort</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;</span><br><span class="line">        QuickSort(a,<span class="number">0</span>,a.length-<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">QuickSort</span><span class="params">(<span class="keyword">int</span>[] a,<span class="keyword">int</span> lo,<span class="keyword">int</span> hi)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(hi&lt;=lo) <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">int</span> j=partition(a,lo,hi);</span><br><span class="line">        QuickSort(a,lo,j-<span class="number">1</span>);</span><br><span class="line">        QuickSort(a,j+<span class="number">1</span>,hi);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">partition</span><span class="params">(<span class="keyword">int</span>[] a,<span class="keyword">int</span> lo,<span class="keyword">int</span> hi)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i=lo,j=hi+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> v=a[lo];</span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>)&#123;</span><br><span class="line">            <span class="keyword">while</span> (isLess(a[++i],v)) <span class="keyword">if</span>(i==hi) <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">while</span> (isLess(v,a[--j])) <span class="keyword">if</span>(j==lo) <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">if</span>(i&gt;=j) <span class="keyword">break</span>;</span><br><span class="line">            swap(a,i,j);</span><br><span class="line">        &#125;</span><br><span class="line">        swap(a,lo,j);    <span class="comment">// 这一步意味着将lo放到合适的位置 lo左边的都比lo小 右边的都比lo大</span></span><br><span class="line">        <span class="keyword">return</span> j;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 三向切分</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Quick3waySort</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;Quick3waySort(a,<span class="number">0</span>,a.length-<span class="number">1</span>);&#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Quick3waySort</span><span class="params">(<span class="keyword">int</span>[] a,<span class="keyword">int</span> lo,<span class="keyword">int</span> hi)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(hi&lt;=lo) <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">int</span> lt=lo,i=lo+<span class="number">1</span>,gt=hi;</span><br><span class="line">        <span class="keyword">int</span> v=a[lo];</span><br><span class="line">        <span class="keyword">while</span> (i&lt;=gt)&#123;</span><br><span class="line">            <span class="keyword">if</span>(a[i]&lt;v) swap(a,lt++,i++);</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(a[i]&gt;v) swap(a,i,gt--);</span><br><span class="line">            <span class="keyword">else</span> i++;</span><br><span class="line">        &#125;</span><br><span class="line">        Quick3waySort(a,lo,lt-<span class="number">1</span>);</span><br><span class="line">        Quick3waySort(a,gt+<span class="number">1</span>,hi);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        <span class="comment">// 获取本地文件地址</span></span><br><span class="line">        String path = <span class="string">&quot;F:/排序/temp.txt&quot;</span>;</span><br><span class="line">       <span class="comment">// File file = new File(path);</span></span><br><span class="line">        String resultpath=<span class="string">&quot;F:/排序/resultpath.txt&quot;</span>;</span><br><span class="line">       <span class="comment">// File resultfile=new File(resultpath);</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        FileOutputStream fos = <span class="keyword">new</span> FileOutputStream(path);</span><br><span class="line">        FileOutputStream resfos=<span class="keyword">new</span> FileOutputStream(resultpath);</span><br><span class="line">        <span class="comment">// 构建随机序列</span></span><br><span class="line">        Scanner in=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;input the the number of entries of object:&quot;</span>);</span><br><span class="line">        <span class="keyword">int</span> k=in.nextInt();</span><br><span class="line">        System.out.println(<span class="string">&quot;input max number:&quot;</span>);</span><br><span class="line">        <span class="keyword">int</span> n=in.nextInt();</span><br><span class="line">        <span class="keyword">int</span>[] Temp= <span class="keyword">new</span> <span class="keyword">int</span>[n];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i ++)</span><br><span class="line">            Temp[i] = i + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span>[] SortNumber=<span class="keyword">new</span> <span class="keyword">int</span>[k];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;SortNumber.length;i++)&#123;</span><br><span class="line">            <span class="keyword">int</span> r=(<span class="keyword">int</span>)(Math.random()*n);</span><br><span class="line">            SortNumber[i]=Temp[r];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 读入本地txt 文件</span></span><br><span class="line">        <span class="keyword">for</span>(Integer i:SortNumber)&#123;</span><br><span class="line">            System.out.println(i);</span><br><span class="line">            fos.write((i.toString()+<span class="string">&quot; &quot;</span>).getBytes());</span><br><span class="line">        &#125;</span><br><span class="line">        fos.close();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// test sort algorithm</span></span><br><span class="line">        System.out.println(<span class="string">&quot;排序后：&quot;</span>);</span><br><span class="line">        <span class="comment">//SelectionSort(SortNumber);</span></span><br><span class="line">        <span class="comment">//InsertSort(SortNumber);</span></span><br><span class="line">        <span class="comment">//HealSort(SortNumber);</span></span><br><span class="line">        <span class="comment">//mergesort(SortNumber);</span></span><br><span class="line">        <span class="comment">//QuickSort(SortNumber);</span></span><br><span class="line">        Quick3waySort(SortNumber);</span><br><span class="line">        <span class="comment">// 自顶向下归并排序</span></span><br><span class="line">        <span class="keyword">for</span>(Integer i:SortNumber)&#123;</span><br><span class="line">            System.out.println(i);</span><br><span class="line">            resfos.write((i.toString()+<span class="string">&quot; &quot;</span>).getBytes());</span><br><span class="line">        &#125;</span><br><span class="line">        resfos.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
       
 
@@ -328,7 +340,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2020/09/01/learning-process/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2020/09/06/%E6%8E%92%E5%BA%8F%E6%80%BB%E7%BB%93/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -342,18 +354,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/09/06/%E6%8E%92%E5%BA%8F%E6%80%BB%E7%BB%93/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/08/31/the-first-blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">the first blog</div>
+    <a href="/2020/09/01/learning-process/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">java自学笔记（路线）</div>
       <i class="icon-circle-right"></i>
     </a>
   
